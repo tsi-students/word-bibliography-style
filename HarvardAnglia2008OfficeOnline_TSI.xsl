@@ -141,6 +141,9 @@
 							<b:ImportantField>
 								<xsl:text>b:Publisher</xsl:text>
 							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:ConferenceName</xsl:text>
+							</b:ImportantField>
 						</xsl:when>
 
 						<xsl:when test="b:GetImportantFields/b:SourceType='Report'">
@@ -4842,6 +4845,18 @@
 			<xsl:call-template name ="templ_prop_Space"/>
 		</xsl:if>
 	</xsl:template>
+	
+	<xsl:template name="BibDisplayConferenceName">
+		<xsl:variable name="cConferenceName">
+			<xsl:value-of select="count(b:ConferenceName)"/>
+		</xsl:variable>
+		<xsl:if test ="$cConferenceName!=0">
+			<xsl:value-of select="'In: '"/>
+			<xsl:value-of select="b:ConferenceName"/>
+			<xsl:call-template name ="templ_prop_ListSeparator"/>
+			<xsl:call-template name ="templ_prop_Space"/>
+		</xsl:if>
+	</xsl:template>
 
 	<xsl:template name="BibDisplayTitleES">
 		<xsl:variable name="cTitle">
@@ -5395,8 +5410,9 @@
 							<xsl:with-param name ="DisplayEditorIfAuthorUnavailale" select="'true'" />
 						</xsl:call-template>
 						<xsl:call-template name ="BibDisplayYear"/>
+						<xsl:call-template name ="BibDisplayTitle"/>
 						<i>
-							<xsl:call-template name ="BibDisplayTitle"/>
+							<xsl:call-template name ="BibDisplayConferenceName"/>
 						</i>
 						<xsl:call-template name ="BibDisplayConfCityConfProc"/>
 						<xsl:call-template name ="BibDisplayConfPublisher"/>
