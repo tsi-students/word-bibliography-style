@@ -4764,8 +4764,9 @@
 		</xsl:variable>
 		<xsl:choose>
 			<xsl:when test ="$cYear=1">
+				<xsl:call-template name ="templ_prop_OpenBracket"/>
 				<xsl:value-of select = "b:Year"/>
-				<xsl:call-template name = "templ_prop_Dot"/>
+				<xsl:call-template name ="templ_prop_CloseBracket"/>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:call-template name ="templ_str_NoDateShortUnCap"/>
