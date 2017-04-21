@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!HarvardAnglia2008OfficeOnline_TSI.xsl
+# etc...
+
+# ...even if they are in subdirectories
+!*/
