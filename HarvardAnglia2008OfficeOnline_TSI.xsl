@@ -5046,12 +5046,12 @@
 		<xsl:choose>
 			<xsl:when test ="$cCity!=0">
 				<xsl:value-of select="b:City"/>
-				<xsl:call-template name ="templ_prop_ListSeparator"/>
+				<xsl:call-template name ="templ_prop_Dot"/>
 				<xsl:call-template name ="templ_prop_Space"/>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:call-template name ="templ_str_SineLocoShort"/>
-				<xsl:call-template name ="templ_prop_ListSeparator"/>
+				<xsl:call-template name ="templ_prop_Dot"/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
