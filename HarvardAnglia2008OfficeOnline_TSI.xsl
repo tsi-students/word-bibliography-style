@@ -12,150 +12,17 @@
 	<xsl:template name="Start">
 		<xsl:choose>
 			<xsl:when test="b:Version">
-				<xsl:text>2010.2.02</xsl:text>
+				<xsl:text>2017.1.01</xsl:text>
 			</xsl:when>
 
 			<xsl:when test="b:XslVersion">
-				<xsl:text>2008</xsl:text>
+				<xsl:text>2017</xsl:text>
 			</xsl:when>
 
-      <xsl:when test="b:StyleNameLocalized">
-        <xsl:choose>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1033'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1025'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1037'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1041'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='2052'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1028'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1042'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1036'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1040'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='3082'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1043'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1031'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1046'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1049'">
-            <xsl:text>Harvard — Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1035'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1032'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1081'">
-            <xsl:text>हार्वर्ड - एंग्लिया</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1054'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1057'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1086'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1066'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1053'">
-            <xsl:text>Harvard – Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1069'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1027'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1030'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1110'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1044'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1061'">
-            <xsl:text>Harvard ‒ Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1062'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1063'">
-            <xsl:text>Harvardas – Anglija</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1045'">
-            <xsl:text>Harvard — Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='2070'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1029'">
-            <xsl:text>Harvard – Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1055'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1038'">
-            <xsl:text>Harvard — Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1048'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1058'">
-            <xsl:text>Гарвард – Англія</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1026'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1050'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1087'">
-            <xsl:text>Гарвард-Англия мәнері</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='2074'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='3098'">
-            <xsl:text>Harvard - Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1051'">
-            <xsl:text>Harvard – Anglia</xsl:text>
-          </xsl:when>
-          <xsl:when test="b:StyleNameLocalized/b:Lcid='1060'">
-            <xsl:text>Harvardski način citiranja</xsl:text>
-          </xsl:when>
-        </xsl:choose>
-      </xsl:when>
-      
+			<xsl:when test="b:StyleNameLocalized">
+				<xsl:text>Harvard - TSI</xsl:text>
+			</xsl:when>
+
 			<xsl:when test="b:category">
 				<xsl:text>From Office Online</xsl:text>
 			</xsl:when>
