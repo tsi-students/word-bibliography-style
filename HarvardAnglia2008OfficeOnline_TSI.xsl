@@ -20,7 +20,7 @@
 			</xsl:when>
 
 			<xsl:when test="b:StyleNameLocalized">
-				<xsl:text>Harvard - TSI</xsl:text>
+				<xsl:text>Harvard - Anglia (TSI)</xsl:text>
 			</xsl:when>
 
 			<xsl:when test="b:category">
