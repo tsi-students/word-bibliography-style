@@ -12,11 +12,11 @@
 	<xsl:template name="Start">
 		<xsl:choose>
 			<xsl:when test="b:Version">
-				<xsl:text>2017.1.01</xsl:text>
+				<xsl:text>2013.11.14</xsl:text>
 			</xsl:when>
 
 			<xsl:when test="b:XslVersion">
-				<xsl:text>2017</xsl:text>
+				<xsl:text>2013</xsl:text>
 			</xsl:when>
 
 			<xsl:when test="b:StyleNameLocalized">
